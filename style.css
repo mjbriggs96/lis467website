@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #125450;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #b0d633;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #8fa38a;
+  color: white;
+}
+
+.header {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  color: white;
+}
+
+.highlights {
+  text-align: center;
+}
+
+.image-row {
+  display: flex;            /* Aligns items horizontally */
+  justify-content: center;   /* Centers the row of images (can also use space-between) */
+  gap: 15px;                /* Adds modern, clean spacing between the images */
+}
+/* Create 3 equal columns that sits next to each other */
+.column {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;}
+
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.img
+{
+  width: 100%;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #611c48;
+  color: white;
+}
